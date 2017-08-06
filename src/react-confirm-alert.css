@@ -39,10 +39,12 @@
 }
 
 .react-confirm-alert > h1 {
+  color: #f69546;
   margin-top: 0;
 }
 
 .react-confirm-alert > h3 {
+  color: #9b9b9b;
   margin: 0;
   font-size: 16px;
 }
@@ -59,14 +61,21 @@
 
 .react-confirm-alert-button-group > button {
   outline: none;
-  background: #333;
+  background-color: lightgrey;
   border: none;
   display: inline-block;
   padding: 6px 18px;
-  color: #eee;
+  color: #9b9b9b;
   margin-right: 10px;
-  border-radius: 5px;
+  border-radius: .25em;
   font-size: 12px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.react-confirm-alert-button-group > button:hover {
+  background-color: #f69546;
+  color: white;
 }
 
 @-webkit-keyframes react-confirm-alert-fadeIn {
